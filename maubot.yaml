@@ -1,0 +1,11 @@
+maubot: 0.1.0
+id: net.jiyuuni.bible
+version: 0.0.1
+license: MIT
+modules:
+- biblebot
+main_class: BibleBot
+database: false
+
+extra_files:
+- base-config.yaml
