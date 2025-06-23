@@ -30,7 +30,7 @@ class BibleBot(Plugin):
         url = f"https://{self.config["baseApi"]}/{self.config["randomPath"]}"
         
         try:
-            response = await self.http.get(url, headers=headers)
+            response = await self.http.get(url)
             resp_json = await response.json()
         except Exception as e:
             await evt.respond(f"request failed: {e.message}")

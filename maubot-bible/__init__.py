@@ -1,1 +1,0 @@
-from .maubot-bible import BibleBot

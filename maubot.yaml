@@ -3,7 +3,7 @@ id: net.jiyuuni.bible
 version: 0.0.1
 license: MIT
 modules:
-- biblebot
+- maubot_bible
 main_class: BibleBot
 database: false
 
