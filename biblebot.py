@@ -5,7 +5,7 @@ from maubot import Plugin, MessageEvent
 from maubot.handlers import command
 
 import json
-import bibleresponse
+from .bibleresponse import BibleResponse
 
 class Config(BaseProxyConfig):
     def do_update(self, helper: ConfigUpdateHelper) -> None:
