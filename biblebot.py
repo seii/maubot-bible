@@ -3,9 +3,9 @@ from typing import Optional, Type
 from mautrix.util.config import BaseProxyConfig, ConfigUpdateHelper
 from maubot import Plugin, MessageEvent
 from maubot.handlers import command
+from . import BibleResponse
 
 import json
-from .bibleresponse import BibleResponse
 
 class Config(BaseProxyConfig):
     def do_update(self, helper: ConfigUpdateHelper) -> None:
