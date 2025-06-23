@@ -3,7 +3,7 @@ from typing import Optional, Type
 from mautrix.util.config import BaseProxyConfig, ConfigUpdateHelper
 from maubot import Plugin, MessageEvent
 from maubot.handlers import command
-from bibleresponse import *
+from .bibleresponse import *
 
 import json
 
