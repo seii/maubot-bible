@@ -28,10 +28,14 @@ class BibleBot(Plugin):
     async def verse_handler(self, evt: MessageEvent, verse: str) -> None:
         await evt.mark_read()
         
+        if(verse == ""):
+            await evt.respond(f"This trigger requires at least one parameter")
+            return None
+        
         if(verse.lower() == "random"):
             url = f"https://{self.config["baseApi"]}/{self.config["randomPath"]}"
         else:
-            url = f"https://{self.config["baseApi"]}/{verse.lower()}"
+            url = f"https://{self.config["baseApi"]}/{verse}?translation=kjv"
         
         try:
             response = await self.http.get(url)
@@ -56,7 +60,7 @@ class BibleBot(Plugin):
             bibleResponse = BibleResponse(book, chapter, verse, text, translation)
             verse_resp = bibleResponse.randomVerse()
         except Exception as e:
-            await evt.respond("No results, double check that you've chosen a real currency pair")
+            await evt.respond("No results, double check that you've chosen a real chapter and verse pairing")
             self.log.exception(e)
             return None
         

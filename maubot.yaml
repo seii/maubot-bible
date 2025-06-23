@@ -1,6 +1,6 @@
 maubot: 0.1.0
 id: net.jiyuuni.bible
-version: 0.0.3
+version: 0.0.4
 license: MIT
 modules:
 - maubot_bible
