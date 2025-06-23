@@ -6,6 +6,6 @@ class BibleResponse:
         
     def getVerse(self):
         if self.random:
-            return f"<b>Random Verse:</b> {self.book} {self.chapter}:{self.verse}<br />{self.text}<br />(Translation: {self.translation})"
+            return f"You asked for <b>a random verse:</b> {self.book} {self.chapter}:{self.verse}<br />{self.text}<br />(Translation: {self.translation})"
         else:
-            return f"You asked for: <b>{self.book} {self.chapter}:{self.verse}:</b><br />{self.text}<br />(Translation: {self.translation})"
+            return f"You asked for <b>{self.book} {self.chapter}:{self.verse}:</b><br />{self.text}<br />(Translation: {self.translation})"
