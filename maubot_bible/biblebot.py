@@ -58,6 +58,7 @@ class BibleBot(Plugin):
                 verse = resp_json["verses"][0]["verse"]
                 text = resp_json["verses"][0]["text"]
                 translation = resp_json["translation_name"]
+                random = False
             
             bibleResponse = BibleResponse(book, chapter, verse, text, translation, random)
             verse_resp = bibleResponse.getVerse()
