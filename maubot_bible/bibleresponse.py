@@ -4,4 +4,4 @@ class BibleResponse:
         self.book, self.chapter, self.verse, self.text, self.translation = book, chapter, verse, text, translation
         
     def randomVerse(self):
-        return f"<b>Random Verse:</b> {self.book} {self.chapter}:{self.verse}\n{self.text}\nTranslation: {self.translation}"
+        return f"<b>Random Verse:</b> {self.book} {self.chapter}:{self.verse}<br />{self.text}<br />(Translation: {self.translation})"

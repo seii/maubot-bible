@@ -1,1 +1,1 @@
-from . import BibleBot
+from .biblebot import BibleBot
