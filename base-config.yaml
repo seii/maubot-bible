@@ -1,7 +1,7 @@
 # Trigger
-randomTrigger: verse
+baseTrigger: verse
 
 # API to call for random Bible verse
 baseApi: bible-api.com
-randomPath: data/web/random
+randomPath: data/kjv/random
 
